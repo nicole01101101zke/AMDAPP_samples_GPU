@@ -1,5 +1,5 @@
 /**********************************************************************
-Copyright ©2013 Advanced Micro Devices, Inc. All rights reserved.
+Copyright ï¿½2013 Advanced Micro Devices, Inc. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -451,6 +451,9 @@ void BufferImageInterop::printStats()
         std::string stats[4];
 
         sampleTimer->totalTime = ( totalKernelTime / iterations );
+
+        std::cout<<std::endl;
+        std::cout<<"Total:"<<totalKernelTime<<std::endl;
 
         stats[0] = toString(width   , std::dec);
         stats[1] = toString(height, std::dec);

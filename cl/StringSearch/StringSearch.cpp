@@ -644,6 +644,9 @@ void StringSearch::printStats()
         std::string stats[4];
         double avgKernelTime = kernelTime / iterations;
 
+        std::cout<<std::endl;
+        std::cout<<"Total:"<<kernelTime<<std::endl;
+
         stats[0] = toString(textLength, std::dec);
         stats[1] = toString(setupTime, std::dec);
         stats[2] = toString(avgKernelTime, std::dec);
